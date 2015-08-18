@@ -24,10 +24,10 @@
     self.listData = [NSMutableArray arrayWithArray:array];
     NSLog(@"%@", self.listData);
     
-    // 去除多余列表线条
+    // 去除多余表单线条
     self.tableView.tableFooterView = [[UIView alloc]init];
     
-    // 删除plist
+    // 删除plist内容
     [self.listData removeObjectAtIndex:2];
     [self.listData writeToFile:path atomically:YES];// 写入文件
     array = nil;
@@ -35,27 +35,27 @@
     NSLog(@"%@", array);
     [self.listData removeAllObjects];
     [self.listData addObjectsFromArray:array];
-    [self.tableView reloadData];// 重置列表
+    [self.tableView reloadData];// 重置表单
     
-    // 添加plist
+    // 添加plist内容
     [self.listData addObject:@"java"];
-    [self.listData writeToFile:path atomically:YES];
+    [self.listData writeToFile:path atomically:YES];// 写入文件
     array = nil;
-    array = [[NSArray alloc] initWithContentsOfFile:path];
+    array = [[NSArray alloc] initWithContentsOfFile:path];// 重新获取
     NSLog(@"%@", array);
     [self.listData removeAllObjects];
     [self.listData addObjectsFromArray:array];
-    [self.tableView reloadData];
+    [self.tableView reloadData];// 重置表单
     
-    // 修改plist
+    // 修改plist内容
     [self.listData replaceObjectAtIndex:2 withObject:@"database"];
-    [self.listData writeToFile:path atomically:YES];
+    [self.listData writeToFile:path atomically:YES];// 写入文件
     array = nil;
-    array = [[NSArray alloc] initWithContentsOfFile:path];
+    array = [[NSArray alloc] initWithContentsOfFile:path];// 重新获取
     NSLog(@"%@", array);
     [self.listData removeAllObjects];
     [self.listData addObjectsFromArray:array];
-    [self.tableView reloadData];
+    [self.tableView reloadData];// 重置表单
     
 }
 
@@ -65,12 +65,12 @@
 }
 
 #pragma mark TableView Data Source Methods
-// 列表的行数
+// 表单的行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.listData count];
 }
 
-// 列表每行的内容
+// 表单每行的内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
@@ -78,6 +78,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
     }
     NSUInteger row = [indexPath row];
+    // 通过行数来返回对应位置的plist内容
     cell.textLabel.text = [self.listData objectAtIndex:row];
     return cell;
 }

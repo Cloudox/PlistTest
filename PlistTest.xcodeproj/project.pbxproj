@@ -420,6 +420,7 @@
 				ADA06ED61B8202BD00627CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADA06ED71B8202BD00627CD7 /* Build configuration list for PBXNativeTarget "PlistTestTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +429,7 @@
 				ADA06ED91B8202BD00627CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
