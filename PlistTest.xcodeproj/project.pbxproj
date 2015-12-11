@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0D9B461C1A5014005CCD67 /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD0D9B451C1A5014005CCD67 /* screenshot.jpg */; };
 		ADA06EB71B8202BC00627CD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA06EB61B8202BC00627CD7 /* main.m */; };
 		ADA06EBA1B8202BC00627CD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA06EB91B8202BC00627CD7 /* AppDelegate.m */; };
 		ADA06EBD1B8202BC00627CD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA06EBC1B8202BC00627CD7 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0D9B451C1A5014005CCD67 /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot.jpg; sourceTree = "<group>"; };
 		ADA06EB11B8202BC00627CD7 /* PlistTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlistTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA06EB51B8202BC00627CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA06EB61B8202BC00627CD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				ADA06EB31B8202BC00627CD7 /* PlistTest */,
 				ADA06ECD1B8202BD00627CD7 /* PlistTestTests */,
 				ADA06EB21B8202BC00627CD7 /* Products */,
+				AD0D9B451C1A5014005CCD67 /* screenshot.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +209,7 @@
 				ADA06EC51B8202BC00627CD7 /* LaunchScreen.xib in Resources */,
 				ADA06EDB1B8202E300627CD7 /* List.plist in Resources */,
 				ADA06EC21B8202BC00627CD7 /* Images.xcassets in Resources */,
+				AD0D9B461C1A5014005CCD67 /* screenshot.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
