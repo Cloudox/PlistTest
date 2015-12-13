@@ -12,6 +12,5 @@
 @property (strong, nonatomic) NSMutableArray *listData;// 用来存储plist内容
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-
 @end
 
